@@ -22,7 +22,7 @@ export class MiniMapaComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,//'YOUR_CONTAINER_ELEMENT_ID', --> id del elemento HTML donde voy a renderizar el mapa (o directamente el DIV)
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/streets-v12',
       center: this.lngLat, //Donde quiero centrar el mapa cuando se abre inicialmente
       zoom: 15, //Zoom que le doy inicialmente
       interactive: false

@@ -45,7 +45,7 @@ export class MarcadoresComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     this.mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,//'YOUR_CONTAINER_ELEMENT_ID', --> id del elemento HTML donde voy a renderizar el mapa (o directamente el DIV)
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/streets-v12',
       center: this.center, //Donde quiero centrar el mapa cuando se abre inicialmente
       zoom: this.zoomLevel //Zoom que le doy inicialmente
     });

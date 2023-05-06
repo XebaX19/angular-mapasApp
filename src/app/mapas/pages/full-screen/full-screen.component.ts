@@ -19,7 +19,7 @@ export class FullScreenComponent implements OnInit {
 
     let map = new mapboxgl.Map({
       container: 'mapa',//'YOUR_CONTAINER_ELEMENT_ID', --> id del elemento HTML donde voy a renderizar el mapa (un DIV)
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/streets-v12',
       center: [-60.33394486106813, -33.232141941142835], //Donde quiero centrar el mapa cuando se abre inicialmente
       zoom: 18 //Zoom que le doy inicialmente
     });
