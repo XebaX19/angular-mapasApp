@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 interface MenuItem {
   ruta: string,
@@ -6,8 +8,10 @@ interface MenuItem {
 }
 
 @Component({
-  selector: 'app-menu',
+  standalone: true,
+  selector: 'side-menu',
   templateUrl: './menu.component.html',
+  imports: [ CommonModule, RouterModule ],
   styles: [`
     li {
       cursor: pointer;
@@ -32,6 +36,10 @@ export class MenuComponent {
     {
       ruta: '/mapas/propiedades',
       nombre: 'Propiedades'
+    },
+    {
+      ruta: '/alone',
+      nombre: 'Alone Page'
     }
   ];
 
